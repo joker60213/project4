@@ -52,29 +52,39 @@ main {
     font-family:'TT Lakes';
 }
 
-.container-slideMenu {
-    display: flex; 
-    margin-left: 16px;
-    height: 40px;
-    width: 504px;
-    font-family:'TT Lakes';
-}
-
-.button { 
-    
-    color: rgb(126, 126, 130);
-    height: 40px;
+.container-slideMen {
     display: flex;
-    align-items: center
+    margin: 0 auto;
+    width: 504px;
+
+}
+.list {
+    overflow-x: auto;
+    display: flex;
+    padding: 0 15px;
+    margin: 0px;
+    justify-content:center
+    color: rgb(126, 126, 130);;
+    font-family:'TT Lakes'
     
 }
-
-.button-1 {
+.list::-webkit-scrollbar {
+    width: 0px;
+}
+.list::after {
+    content: '';
+    display: block;
+    flex-shrink: 0;
+    width: 15px;
+}
+li {
+    white-space: nowrap;
+    margin: 0 5px;
+    list-style-type: none;
     border: 1px solid rgb(0, 225, 254);
     border-radius: 5px;
     padding: 5px 10px;
 }
-
 .text {
     margin: 0 auto;
     padding-left: 16px;
